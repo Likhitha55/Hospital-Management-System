@@ -1,13 +1,16 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Doctor {
     String docName;
     String docId;
     String docDegree;
     int docSalary;
     String speciality;
-
-    List<String> patientsList;
+    String timeSlot;
+    List<Patient> patientsList;
 
     public Doctor(String docName, String docId, String docDegree, int docSalary, String speciality) {
         this.docName = docName;
